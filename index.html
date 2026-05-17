@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jasa pembuatan IoT, aplikasi mobile, website, dan service komputer terpercaya">
+<meta property="og:title" content="Ambarita Inovasi Teknologi">
+<meta property="og:image" content="thumbnail.jpg">
+<meta name="generator" content="Ambarita Framework">
+<meta name="framework" content="Custom HTML5 Landing Page">
+<meta name="technology" content="IoT, Flutter, Web Development">
+<meta name="theme-color" content="#3b82f6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ambarita Inovasi Teknologi">
+<meta name="author" content="Ambarita Inovasi Teknologi">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>	
+<title>Ambarita Inovasi Teknologi — Solusi Digital Terpercaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep:    #030712;
+  --bg-card:    #0d1117;
+  --bg-glass:   rgba(13,17,23,0.85);
+  --blue:       #3b82f6;
+  --blue-light: #60a5fa;
+  --blue-glow:  rgba(59,130,246,0.25);
+  --gold:       #f59e0b;
+  --gold-light: #fbbf24;
+  --gold-glow:  rgba(245,158,11,0.2);
+  --teal:       #14b8a6;
+  --purple:     #8b5cf6;
+  --coral:      #f97316;
+  --text-1:     #f1f5f9;
+  --text-2:     #94a3b8;
+  --text-3:     #475569;
+  --border:     rgba(148,163,184,0.1);
+  --border-hov: rgba(59,130,246,0.4);
+  --radius:     16px;
+  --radius-lg:  24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+html { scroll-behavior: smooth; }
+
+/* ========== SMOOTH THEME TRANSITION ========== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+nav,
+section,
+footer,
+.layanan-card,
+.harga-card,
+.testi-card,
+.form-card,
+.float-card,
+.mini-card,
+.kontak-item,
+.btn-primary,
+.btn-ghost,
+.theme-toggle,
+input,
+textarea,
+select,
+.logo-name,
+.logo-tagline,
+.nav-links a,
+.hero-title,
+.hero-sub,
+.section-title,
+.section-sub,
+.stat-label,
+.testi-text,
+.footer-links a,
+.footer-desc,
+.footer-bottom p {
+  transition:
+    background-color 0.45s ease,
+    background 0.45s ease,
+    color 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+/* glow smooth */
+.orb,
+.grid-bg,
+body::before {
+  transition:
+    opacity 0.6s ease,
+    background 0.6s ease,
+    filter 0.6s ease;
+}
+
+/* smooth card hover */
+.layanan-card:hover,
+.harga-card:hover,
+.testi-card:hover,
+.kontak-item:hover {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* tombol tema animasi */
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+/* efek ripple */
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(255,255,255,0.35), transparent 70%);
+  transform: scale(0);
+  opacity: 0;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.theme-toggle:active::before {
+  transform: scale(2.5);
+  opacity: 1;
+}
+
+/* animasi icon */
+.theme-toggle {
+  animation: fadeTheme 0.4s ease;
+}
+
+@keyframes fadeTheme {
+  from {
+    transform: rotate(-90deg) scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* efek smooth background */
+body.light-theme .orb-1 {
+  background: rgba(59,130,246,0.08);
+}
+
+body.light-theme .orb-2 {
+  background: rgba(245,158,11,0.05);
+}
+
+body.light-theme .orb-3 {
+  background: rgba(139,92,246,0.04);
+}
+
+/* grid lebih soft di light */
+body.light-theme .grid-bg {
+  background-image:
+    linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px);
+}
+
+/* efek fade halaman */
+body {
+  animation: pageFade 0.8s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========== LIGHT THEME ========== */
+body.light-theme {
+  --bg-deep: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255,255,255,0.85);
+
+  --text-1: #0f172a;
+  --text-2: #475569;
+  --text-3: #64748b;
+
+  --border: rgba(15,23,42,0.08);
+  --border-hov: rgba(59,130,246,0.35);
+
+  background: var(--bg-deep);
+  color: var(--text-1);
+}
+
+/* tombol theme */
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-1);
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+  border-color: var(--blue);
+  box-shadow: 0 0 20px rgba(59,130,246,0.2);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg-deep);
+  color: var(--text-1);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
+
+/* ========== NOISE TEXTURE ========== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* ========== GRID BG ========== */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ========== GLOW ORBS ========== */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+.orb-1 { width: 600px; height: 600px; top: -200px; right: -100px; background: rgba(59,130,246,0.12); }
+.orb-2 { width: 500px; height: 500px; bottom: 10%; left: -150px; background: rgba(245,158,11,0.08); }
+.orb-3 { width: 400px; height: 400px; top: 40%; right: 10%; background: rgba(139,92,246,0.07); }
+
+/* ========== NAVBAR ========== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 5%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(3,7,18,0.8);
+  backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* navbar saat scroll dark */
+nav.scrolled {
+  background: rgba(3,7,18,0.97);
+  border-bottom-color: var(--border-hov);
+}
+
+/* ========== LIGHT NAVBAR ========== */
+body.light-theme nav {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(15,23,42,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+/* navbar scroll light */
+body.light-theme nav.scrolled {
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid rgba(59,130,246,0.15);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+/* link navbar light */
+body.light-theme .nav-links a {
+  color: #334155;
+}
+
+body.light-theme .nav-links a:hover {
+  color: #2563eb;
+}
+
+/* logo text */
+body.light-theme .logo-name {
+  color: #0f172a;
+}
+
+body.light-theme .logo-tagline {
+  color: #64748b;
+}
+
+/* hamburger */
+body.light-theme .hamburger span {
+  background: #0f172a;
+}
+
+/* mobile menu light */
+body.light-theme .nav-links.open {
+  background: rgba(255,255,255,0.96);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.logo-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+  backdrop-filter: blur(12px);
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-text { line-height: 1.2; }
+.logo-name {
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-1);
+}
+.logo-tagline {
+  font-size: 10px;
+  color: var(--text-2);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-2);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text-1); }
+
+.nav-cta {
+  background: var(--blue);
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+.nav-cta:hover { background: var(--blue-light) !important; box-shadow: 0 0 24px var(--blue-glow); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  width: 24px; height: 2px;
+  background: var(--text-1);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* ========== HERO ========== */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 5% 80px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.3);
+  border-radius: 40px;
+  padding: 8px 20px;
+  margin-bottom: 32px;
+  animation: fadeUp 0.8s ease both;
+}
+.hero-badge-dot {
+  width: 7px; height: 7px;
+  background: var(--blue);
+  border-radius: 50%;
+  animation: blink 2s ease infinite;
+}
+@keyframes blink {
+  0%,100% { opacity: 1; box-shadow: 0 0 8px var(--blue); }
+  50% { opacity: 0.4; box-shadow: none; }
+}
+.hero-badge span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue-light);
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  animation: fadeUp 0.8s ease 0.1s both;
+}
+.hero-title .grad {
+  background: linear-gradient(90deg, var(--blue-light), var(--purple), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--text-2);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  font-weight: 400;
+  line-height: 1.7;
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s ease 0.3s both;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+.btn-primary:hover { background: var(--blue-light); box-shadow: 0 8px 32px var(--blue-glow); transform: translateY(-2px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-1);
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+.btn-ghost:hover { border-color: var(--border-hov); background: rgba(59,130,246,0.06); transform: translateY(-2px); }
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+  animation: fadeUp 0.8s ease 0.5s both;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--blue-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--text-3);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Scroll indicator */
+.scroll-cue {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: fadeUp 1s ease 1s both;
+}
+.scroll-cue span { font-size: 11px; color: var(--text-3); letter-spacing: 2px; text-transform: uppercase; }
+.scroll-cue-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--blue), transparent);
+  animation: scrollLine 2s ease infinite;
+}
+@keyframes scrollLine {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ========== SECTION BASE ========== */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 100px 5%;
+}
+.section-label {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--blue);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.section-sub {
+  font-size: 17px;
+  color: var(--text-2);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* ========== LAYANAN ========== */
+#layanan { background: transparent; }
+.layanan-intro { max-width: 700px; margin-bottom: 64px; }
+
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.layanan-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: default;
+}
+.layanan-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--c);
+  opacity: 0.8;
+}
+.layanan-card:hover {
+  border-color: var(--border-hov);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4), 0 0 0 1px var(--border-hov);
+}
+.layanan-card:hover .card-glow {
+  opacity: 1;
+}
+.card-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.layanan-card.iot { --c: linear-gradient(90deg, #3b82f6, #14b8a6); }
+.layanan-card.mobile { --c: linear-gradient(90deg, #8b5cf6, #ec4899); }
+.layanan-card.repair { --c: linear-gradient(90deg, #f97316, #f59e0b); }
+.layanan-card.web { --c: linear-gradient(90deg, #14b8a6, #3b82f6); }
+
+.layanan-card.iot .card-glow { background: radial-gradient(ellipse at 0 0, rgba(59,130,246,0.06), transparent 70%); }
+.layanan-card.mobile .card-glow { background: radial-gradient(ellipse at 0 0, rgba(139,92,246,0.06), transparent 70%); }
+.layanan-card.repair .card-glow { background: radial-gradient(ellipse at 0 0, rgba(249,115,22,0.06), transparent 70%); }
+.layanan-card.web .card-glow { background: radial-gradient(ellipse at 0 0, rgba(20,184,166,0.06), transparent 70%); }
+
+.card-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-3);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.card-icon-wrap {
+  width: 60px; height: 60px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.iot .card-icon-wrap { background: rgba(59,130,246,0.12); }
+.mobile .card-icon-wrap { background: rgba(139,92,246,0.12); }
+.repair .card-icon-wrap { background: rgba(249,115,22,0.12); }
+.web .card-icon-wrap { background: rgba(20,184,166,0.12); }
+
+.layanan-card h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.layanan-card p {
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.features-list li::before {
+  content: '';
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.iot .features-list li::before { background: var(--blue); }
+.mobile .features-list li::before { background: var(--purple); }
+.repair .features-list li::before { background: var(--coral); }
+.web .features-list li::before { background: var(--teal); }
+
+/* ========== KEUNGGULAN ========== */
+#keunggulan {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.keunggulan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.keunggulan-left .section-sub { max-width: 100%; margin-bottom: 40px; }
+
+.keunggulan-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.k-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.k-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.k-item h4 {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.k-item p { color: var(--text-2); font-size: 14px; line-height: 1.6; }
+
+.keunggulan-right {
+  position: relative;
+}
+
+.float-card {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.float-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+}
+
+.float-card-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-2);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tech-list { display: flex; flex-direction: column; gap: 12px; }
+.tech-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tech-name { font-size: 14px; color: var(--text-2); min-width: 120px; }
+.tech-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.tech-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  animation: barGrow 1.5s ease both;
+}
+@keyframes barGrow {
+  from { width: 0 !important; }
+}
+.tech-pct { font-size: 12px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; min-width: 32px; text-align: right; }
+
+.mini-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+.mini-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.mini-card-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--blue-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mini-card-label { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+
+/* ========== PROSES ========== */
+#proses {}
+.proses-intro { max-width: 560px; margin-bottom: 72px; }
+
+.proses-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+.proses-track::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  left: calc(12.5%);
+  right: calc(12.5%);
+  height: 1px;
+  background: linear-gradient(90deg, var(--blue), var(--purple), var(--gold));
+  z-index: 0;
+}
+
+.proses-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 16px;
+}
+.step-num {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px;
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  transition: all 0.3s;
+  position: relative;
+}
+.proses-step:nth-child(1) .step-num { border-color: var(--blue); color: var(--blue); background: rgba(59,130,246,0.1); }
+.proses-step:nth-child(2) .step-num { border-color: var(--purple); color: var(--purple); background: rgba(139,92,246,0.1); }
+.proses-step:nth-child(3) .step-num { border-color: var(--gold); color: var(--gold); background: rgba(245,158,11,0.1); }
+.proses-step:nth-child(4) .step-num { border-color: var(--teal); color: var(--teal); background: rgba(20,184,166,0.1); }
+
+.proses-step h4 {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.proses-step p { font-size: 14px; color: var(--text-2); line-height: 1.6; }
+
+/* ========== PRICING TEASER ========== */
+#harga {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.harga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+.harga-card {
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  border: 1px solid var(--border);
+  background: var(--bg-deep);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.harga-card:hover { transform: translateY(-4px); border-color: var(--border-hov); }
+.harga-card.featured {
+  border-color: var(--blue);
+  background: linear-gradient(160deg, rgba(59,130,246,0.08), var(--bg-deep));
+}
+.popular-badge {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: var(--blue);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+.harga-name {
+  font-family: 'Sora', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.harga-price {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  background: linear-gradient(90deg, var(--text-1), var(--blue-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.harga-note { font-size: 13px; color: var(--text-3); margin-bottom: 32px; }
+.harga-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px; }
+.harga-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+.check {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: rgba(20,184,166,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+.harga-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 32px;
+}
+.harga-footer {
+  text-align: center;
+  max-width: 500px;
+  margin: 48px auto 0;
+}
+.harga-footer p { color: var(--text-2); font-size: 15px; }
+
+/* ========== TESTIMONIAL ========== */
+#testimonial { padding: 100px 5%; }
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+.testi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: all 0.3s;
+}
+.testi-card:hover { border-color: var(--border-hov); transform: translateY(-4px); }
+.stars { color: var(--gold); font-size: 14px; margin-bottom: 16px; letter-spacing: 2px; }
+.testi-text {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.testi-text::before { content: '"'; font-size: 32px; color: var(--blue); line-height: 0; vertical-align: -12px; margin-right: 4px; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.t1 .testi-avatar { background: rgba(59,130,246,0.2); color: var(--blue-light); }
+.t2 .testi-avatar { background: rgba(245,158,11,0.2); color: var(--gold); }
+.t3 .testi-avatar { background: rgba(20,184,166,0.2); color: var(--teal); }
+.testi-name { font-size: 14px; font-weight: 600; color: var(--text-1); }
+.testi-role { font-size: 12px; color: var(--text-3); }
+
+/* ========== KONTAK ========== */
+#kontak {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+}
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+.kontak-left .section-sub { max-width: 100%; margin-bottom: 40px; }
+
+.kontak-info { display: flex; flex-direction: column; gap: 20px; }
+.kontak-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.kontak-item:hover { border-color: var(--border-hov); transform: translateX(4px); background: rgba(59,130,246,0.04); }
+.kontak-item-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.k-wa .kontak-item-icon { background: rgba(37,211,102,0.1); }
+.k-phone .kontak-item-icon { background: rgba(59,130,246,0.1); }
+.k-loc .kontak-item-icon { background: rgba(245,158,11,0.1); }
+.kontak-item-label { font-size: 12px; color: var(--text-3); }
+.kontak-item-val { font-size: 15px; font-weight: 600; color: var(--text-1); }
+
+.form-card {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.form-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--purple), var(--gold));
+}
+
+.form-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.form-sub { font-size: 14px; color: var(--text-2); margin-bottom: 32px; }
+
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-2);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text-1);
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+.form-group select { cursor: pointer; }
+.form-group select option { background: #0d1117; }
+.form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* ========== FOOTER ========== */
+footer {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-deep);
+  border-top: 1px solid var(--border);
+  padding: 60px 5% 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-logo { margin-bottom: 16px; }
+.footer-desc { font-size: 14px; color: var(--text-3); line-height: 1.7; margin-bottom: 24px; }
+.footer-socials { display: flex; gap: 12px; }
+.social-btn {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.social-btn:hover { background: rgba(59,130,246,0.1); border-color: var(--border-hov); }
+
+.footer-col h5 {
+  font-family: 'Sora', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-1);
+  margin-bottom: 20px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--text-3);
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--blue-light); }
+
+.footer-contact-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.footer-contact-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-3); }
+.footer-contact-list .icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-bottom p { font-size: 13px; color: var(--text-3); }
+.footer-bottom span { color: var(--blue-light); }
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .layanan-grid { grid-template-columns: 1fr; }
+  .keunggulan-grid { grid-template-columns: 1fr; gap: 48px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .proses-track { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .proses-track::before { display: none; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 16px; height: 70px; }
+  /* logo */
+  .logo { gap: 10px; min-width: 0; flex: 1;}
+  .logo-icon { width: 42px; height: 42px;}
+  .logo-name { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
+  .logo-tagline { font-size: 9px; }
+  /* tombol theme */
+  .theme-toggle { min-width: auto; width: 42px; height: 42px; padding: 0; font-size: 16px; border-radius: 12px; margin-right: 10px; }
+  .theme-toggle span {
+    display: none;
+  }
+  /* hamburger */
+  .hamburger {
+    display: flex;
+    z-index: 1002;
+  }
+  .hamburger span {
+    width: 24px;
+    height: 2px;
+    transition: all 0.3s ease;
+  }
+  /* animasi hamburger jadi X */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  /* menu mobile */
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(3,7,18,0.97);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 8px;
+    transition: left 0.35s ease;
+    z-index: 1000;
+  }
+  body.light-theme .nav-links {
+    background: rgba(255,255,255,0.97);
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    width: 100%;
+    display: block;
+
+    padding: 14px 0;
+    font-size: 17px;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-cta {
+    margin-top: 12px;
+    text-align: center !important;
+    padding: 14px !important;
+    border-radius: 12px;
+  }
+
+  /* section spacing */
+  section {
+    padding: 72px 20px;
+  }
+
+  /* layout responsive */
+  .layanan-grid,
+  .harga-grid,
+  .testi-grid,
+  .proses-track,
+  .kontak-grid,
+  .footer-grid,
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* ================= LIGHT THEME ================= */
+
+body.light-theme {
+  --bg-deep: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255,255,255,0.8);
+
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+
+  --text-1: #0f172a;
+  --text-2: #475569;
+  --text-3: #64748b;
+
+  --border: rgba(15,23,42,0.08);
+  --border-hov: rgba(37,99,235,0.25);
+}
+
+/* ================= NEON THEME ================= */
+
+body.neon-theme {
+  --bg-deep: #020617;
+  --bg-card: #07111f;
+  --bg-glass: rgba(7,17,31,0.85);
+
+  --blue: #00f7ff;
+  --blue-light: #67e8f9;
+  --blue-glow: rgba(0,247,255,0.35);
+
+  --gold: #ff00c8;
+  --gold-light: #ff4ddb;
+
+  --purple: #9d4edd;
+  --teal: #00ffae;
+  --coral: #ff6b6b;
+
+  --text-1: #dffcff;
+  --text-2: #9bd9ff;
+  --text-3: #4ea8de;
+
+  --border: rgba(0,247,255,0.12);
+  --border-hov: rgba(0,247,255,0.45);
+}
+
+/* neon special glow */
+body.neon-theme .layanan-card,
+body.neon-theme .harga-card,
+body.neon-theme .testi-card,
+body.neon-theme .form-card,
+body.neon-theme nav { box-shadow: 0 0 0 rgba(0,0,0,0), 0 0 25px rgba(0,247,255,0.05);}
+/* neon title glow */
+body.neon-theme .hero-title,
+body.neon-theme .section-title {
+  text-shadow:
+    0 0 10px rgba(0,247,255,0.25),
+    0 0 20px rgba(0,247,255,0.15);
+}
+
+/* neon buttons */
+body.neon-theme .btn-primary {
+  box-shadow:
+    0 0 12px rgba(0,247,255,0.35),
+    0 0 30px rgba(0,247,255,0.15);
+}
+
+/* neon orb */
+body.neon-theme .orb-1 {
+  background: rgba(0,247,255,0.14);
+}
+
+body.neon-theme .orb-2 {
+  background: rgba(255,0,200,0.10);
+}
+
+body.neon-theme .orb-3 {
+  background: rgba(0,255,174,0.08);
+}
+/* ================= THEME BUTTON ================= */
+
+.theme-toggle {
+  min-width: 120px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: var(--bg-card);
+  color: var(--text-1);
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  padding: 0 16px;
+
+  transition: all 0.4s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(20px);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--blue);
+  box-shadow: 0 0 20px var(--blue-glow);
+}
+/* ================= ANIMATED GRADIENT BG ================= */
+
+.animated-gradient {
+  position: fixed;
+  inset: -20%;
+  z-index: -3;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.18), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(139,92,246,0.16), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(245,158,11,0.14), transparent 30%);
+
+  filter: blur(80px);
+
+  animation:
+    gradientMove 18s ease-in-out infinite alternate,
+    gradientPulse 12s ease-in-out infinite;
+
+  transition:
+    background 0.8s ease,
+    opacity 0.8s ease;
+}
+
+/* gerakan gradient */
+@keyframes gradientMove {
+
+  0% {
+    transform:
+      translate3d(0,0,0)
+      scale(1)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      translate3d(-4%,3%,0)
+      scale(1.08)
+      rotate(8deg);
+  }
+
+  100% {
+    transform:
+      translate3d(4%,-3%,0)
+      scale(1.12)
+      rotate(-8deg);
+  }
+}
+
+/* efek pulse */
+@keyframes gradientPulse {
+
+  0% {
+    opacity: 0.65;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+/* ================= DARK THEME BG ================= */
+
+body:not(.light-theme):not(.neon-theme) .animated-gradient {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.20), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(139,92,246,0.16), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(245,158,11,0.14), transparent 30%);
+}
+
+/* ================= LIGHT THEME BG ================= */
+
+body.light-theme .animated-gradient {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.12), transparent 28%),
+    radial-gradient(circle at 80% 30%, rgba(14,165,233,0.10), transparent 28%),
+    radial-gradient(circle at 50% 80%, rgba(251,191,36,0.10), transparent 28%);
+}
+
+/* ================= NEON THEME BG ================= */
+
+body.neon-theme .animated-gradient {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0,247,255,0.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(255,0,200,0.20), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(0,255,174,0.18), transparent 30%);
+}
+/* blend premium */
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+/* supaya gradient lebih lembut */
+.animated-gradient {
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+.harga-price-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.harga-price {
+  font-family: 'Sora', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--text-1), var(--blue-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0;
+}
+
+.harga-price-tag {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue-light);
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.25);
+  border-radius: 8px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+.harga-card.featured .harga-price-tag {
+  background: rgba(59,130,246,0.18);
+  border-color: rgba(59,130,246,0.45);
+}
+</style>
+</head>
+<body>
+<div class="animated-gradient"></div>
+<!-- BG EFFECTS -->
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#hero" class="logo">
+    <div class="logo-icon">
+<img src="logo.png" alt="AIT Logo">
+</div>
+    <div class="logo-text">
+      <div class="logo-name">Ambarita Inovasi Teknologi</div>
+      <div class="logo-tagline">Digital Solutions</div>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#keunggulan">Keunggulan</a></li>
+    <li><a href="#proses">Proses</a></li>
+    <li><a href="#harga">Harga</a></li>
+    <li><a href="#testimonial">Testimoni</a></li>
+    <li><a href="https://wa.me/6282360984623?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20AIT" class="nav-cta" target="_blank">Konsultasi Gratis</a></li>
+  </ul>
+<button id="themeToggle" class="theme-toggle">
+  🌙 Dark
+</button>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-badge">
+    <div class="hero-badge-dot"></div>
+    <span>Ambarita Inovasi Teknologi</span>
+  </div>
+
+  <h1 class="hero-title">
+    Solusi Digital<br>
+    <span class="grad">Inovatif & Terpercaya</span>
+  </h1>
+
+  <p class="hero-sub">
+    Kami hadir untuk mewujudkan visi digital Anda — dari perangkat IoT cerdas, aplikasi mobile, hingga website profesional dan perbaikan komputer.
+  </p>
+
+  <div class="hero-actions">
+    <a href="https://wa.me/6282360984623?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20AIT" class="btn-primary" target="_blank">
+      💬 Konsultasi Gratis
+    </a>
+    <a href="#layanan" class="btn-ghost">
+      Lihat Layanan →
+    </a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Proyek Selesai</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Layanan Utama</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Klien Puas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Support Teknis</div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+</section>
+
+<!-- ===== LAYANAN ===== -->
+<section id="layanan">
+  <div class="layanan-intro reveal">
+    <span class="section-label">// Layanan Kami</span>
+    <h2 class="section-title">Apa yang Bisa Kami Bantu?</h2>
+    <p class="section-sub">Empat layanan unggulan yang dirancang untuk memenuhi kebutuhan teknologi Anda dari hulu ke hilir.</p>
+  </div>
+
+  <div class="layanan-grid">
+
+    <!-- IoT -->
+    <div class="layanan-card iot reveal">
+      <div class="card-glow"></div>
+      <div class="card-num">01 — IoT</div>
+      <div class="card-icon-wrap">🔌</div>
+      <h3>Pembuatan IoT</h3>
+      <p>Kami merancang dan membangun sistem Internet of Things (IoT) yang menghubungkan perangkat fisik dengan dunia digital — untuk rumah pintar, industri, pertanian, maupun kebutuhan bisnis khusus Anda.</p>
+      <ul class="features-list">
+        <li>Sensor & aktuator kustom</li>
+        <li>Dashboard monitoring real-time</li>
+        <li>Konektivitas WiFi, Bluetooth, LoRa</li>
+        <li>Integrasi cloud (Firebase, AWS IoT)</li>
+        <li>Prototype hingga produksi massal</li>
+      </ul>
+    </div>
+
+    <!-- Mobile -->
+    <div class="layanan-card mobile reveal">
+      <div class="card-glow"></div>
+      <div class="card-num">02 — Mobile</div>
+      <div class="card-icon-wrap">📱</div>
+      <h3>Aplikasi Mobile</h3>
+      <p>Pengembangan aplikasi mobile native dan cross-platform untuk Android & iOS. Dari konsep, desain UI/UX modern, hingga publikasi di Play Store dan App Store siap kami tangani secara profesional.</p>
+      <ul class="features-list">
+        <li>Android & iOS (Flutter / React Native)</li>
+        <li>Desain UI/UX modern & responsif</li>
+        <li>Integrasi API & database</li>
+        <li>Notifikasi push & fitur offline</li>
+        <li>Maintenance & update berkelanjutan</li>
+      </ul>
+    </div>
+
+    <!-- Repair -->
+    <div class="layanan-card repair reveal">
+      <div class="card-glow"></div>
+      <div class="card-num">03 — Repair</div>
+      <div class="card-icon-wrap">🖥️</div>
+      <h3>Perbaikan Komputer</h3>
+      <p>Layanan service laptop dan komputer cepat, tepat, dan terjangkau. Ditangani oleh teknisi berpengalaman dengan garansi perbaikan. Kami siap datang ke lokasi Anda.</p>
+      <ul class="features-list">
+        <li>Service laptop & PC (semua merek)</li>
+        <li>Install / reinstall sistem operasi</li>
+        <li>Upgrade RAM, SSD, komponen</li>
+        <li>Virus removal & optimasi performa</li>
+        <li>Teknisi datang ke lokasi</li>
+      </ul>
+    </div>
+
+    <!-- Website -->
+    <div class="layanan-card web reveal">
+      <div class="card-glow"></div>
+      <div class="card-num">04 — Web</div>
+      <div class="card-icon-wrap">🌐</div>
+      <h3>Pembuatan Website</h3>
+      <p>Kami membangun website profesional yang tidak hanya tampil memukau, tapi juga cepat, aman, dan SEO-friendly. Cocok untuk company profile, toko online, landing page, dan portal bisnis.</p>
+      <ul class="features-list">
+        <li>Company profile & landing page</li>
+        <li>Toko online (WooCommerce / custom)</li>
+        <li>Desain modern & mobile-friendly</li>
+        <li>SEO dasar & optimasi kecepatan</li>
+        <li>Hosting & domain support</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== KEUNGGULAN ===== -->
+<section id="keunggulan">
+  <div class="keunggulan-grid">
+    <div class="keunggulan-left reveal">
+      <span class="section-label">// Mengapa Kami?</span>
+      <h2 class="section-title">Keunggulan Ambarita Inovasi Teknologi</h2>
+      <p class="section-sub">Kami bukan sekadar vendor — kami adalah mitra teknologi yang peduli pada keberhasilan proyek Anda dari awal hingga akhir.</p>
+
+      <div class="keunggulan-items">
+        <div class="k-item">
+          <div class="k-icon">⚡</div>
+          <div>
+            <h4>Pengerjaan Cepat & Tepat Waktu</h4>
+            <p>Kami menghormati waktu Anda. Setiap proyek dikerjakan sesuai timeline yang disepakati dengan standar kualitas tinggi.</p>
+          </div>
+        </div>
+        <div class="k-item">
+          <div class="k-icon">🛡️</div>
+          <div>
+            <h4>Garansi Layanan & Support</h4>
+            <p>Setiap layanan dilengkapi garansi dan dukungan teknis. Kami tidak menghilang setelah proyek selesai.</p>
+          </div>
+        </div>
+        <div class="k-item">
+          <div class="k-icon">💰</div>
+          <div>
+            <h4>Harga Transparan & Terjangkau</h4>
+            <p>Estimasi biaya yang jelas dari awal, tanpa biaya tersembunyi. Fleksibel untuk skala UKM hingga korporasi.</p>
+          </div>
+        </div>
+        <div class="k-item">
+          <div class="k-icon">🤝</div>
+          <div>
+            <h4>Konsultasi & Komunikasi Aktif</h4>
+            <p>Tim kami selalu terbuka untuk diskusi. Update progress proyek secara berkala dan responsif terhadap perubahan kebutuhan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keunggulan-right reveal">
+      <div class="float-card">
+        <div class="float-card-title">Stack Teknologi Kami</div>
+        <div class="tech-list">
+          <div class="tech-row">
+            <span class="tech-name">Web Development</span>
+            <div class="tech-bar-track"><div class="tech-bar-fill" style="width:95%; background: linear-gradient(90deg, #3b82f6, #14b8a6);"></div></div>
+            <span class="tech-pct">95%</span>
+          </div>
+          <div class="tech-row">
+            <span class="tech-name">Mobile (Flutter)</span>
+            <div class="tech-bar-track"><div class="tech-bar-fill" style="width:88%; background: linear-gradient(90deg, #8b5cf6, #ec4899);"></div></div>
+            <span class="tech-pct">88%</span>
+          </div>
+          <div class="tech-row">
+            <span class="tech-name">IoT / Embedded</span>
+            <div class="tech-bar-track"><div class="tech-bar-fill" style="width:85%; background: linear-gradient(90deg, #3b82f6, #3b82f6);"></div></div>
+            <span class="tech-pct">85%</span>
+          </div>
+          <div class="tech-row">
+            <span class="tech-name">Hardware Repair</span>
+            <div class="tech-bar-track"><div class="tech-bar-fill" style="width:92%; background: linear-gradient(90deg, #f97316, #f59e0b);"></div></div>
+            <span class="tech-pct">92%</span>
+          </div>
+          <div class="tech-row">
+            <span class="tech-name">Cloud & Backend</span>
+            <div class="tech-bar-track"><div class="tech-bar-fill" style="width:80%; background: linear-gradient(90deg, #14b8a6, #3b82f6);"></div></div>
+            <span class="tech-pct">80%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-cards" style="margin-top: 16px;">
+        <div class="mini-card">
+          <div class="mini-card-num">50+</div>
+          <div class="mini-card-label">Proyek Selesai</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-num">3+</div>
+          <div class="mini-card-label">Tahun Pengalaman</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-num">100%</div>
+          <div class="mini-card-label">Klien Puas</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-num">24/7</div>
+          <div class="mini-card-label">Support Teknis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROSES ===== -->
+<section id="proses">
+  <div class="proses-intro reveal">
+    <span class="section-label">// Cara Kerja Kami</span>
+    <h2 class="section-title">Proses Simpel, Hasil Maksimal</h2>
+    <p class="section-sub">Kami percaya proses yang transparan adalah kunci proyek yang sukses.</p>
+  </div>
+
+  <div class="proses-track">
+    <div class="proses-step reveal">
+      <div class="step-num">01</div>
+      <h4>Konsultasi</h4>
+      <p>Ceritakan kebutuhan Anda. Kami dengarkan, analisis, dan berikan rekomendasi solusi terbaik secara gratis.</p>
+    </div>
+    <div class="proses-step reveal">
+      <div class="step-num">02</div>
+      <h4>Perencanaan</h4>
+      <p>Kami buat proposal detail mencakup scope, timeline, teknologi yang digunakan, dan estimasi biaya yang transparan.</p>
+    </div>
+    <div class="proses-step reveal">
+      <div class="step-num">03</div>
+      <h4>Pengerjaan</h4>
+      <p>Proyek dikerjakan dengan update progress berkala. Anda selalu tahu perkembangan terkini setiap saat.</p>
+    </div>
+    <div class="proses-step reveal">
+      <div class="step-num">04</div>
+      <h4>Serah Terima</h4>
+      <p>Pengujian menyeluruh sebelum diserahkan. Disertai pelatihan penggunaan dan garansi purna jual.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HARGA ===== -->
+<section id="harga">
+  <div class="reveal" style="text-align:center;">
+    <span class="section-label">// Paket Harga</span>
+    <h2 class="section-title">Investasi Terjangkau</h2>
+    <p class="section-sub" style="margin: 0 auto;">Harga transparan dan fleksibel. Hubungi kami untuk penawaran yang disesuaikan dengan kebutuhan spesifik Anda.</p>
+  </div>
+
+  <div class="harga-grid">
+    <div class="harga-card reveal">
+      <div class="harga-name">Starter</div>
+      <div class="harga-price-wrap">
+  	<div class="harga-price">Terjangkau</div>
+  	<div class="harga-price-tag">Mulai Rp 500.000</div>
+	</div>
+      <div class="harga-note">Cocok untuk usaha kecil & personal</div>
+      <div class="harga-divider"></div>
+      <ul class="harga-features">
+        <li><span class="check">✓</span> Website company profile (5 halaman)</li>
+        <li><span class="check">✓</span> Desain responsif mobile-friendly</li>
+        <li><span class="check">✓</span> Formulir kontak & WhatsApp button</li>
+        <li><span class="check">✓</span> 1 bulan support gratis</li>
+        <li><span class="check">✓</span> Revisi hingga 3 kali</li>
+      </ul>
+      <a href="https://wa.me/6282360984623?text=Halo,%20saya%20tertarik%20dengan%20paket%20Starter" class="btn-ghost" target="_blank" style="width:100%; text-align:center; justify-content:center;">Tanya Harga</a>
+    </div>
+
+    <div class="harga-card featured reveal">
+      <div class="popular-badge">Terpopuler</div>
+      <div class="harga-name">Professional</div>
+      <div class="harga-price-wrap">
+ 	<div class="harga-price">Kompetitif</div>
+  	<div class="harga-price-tag">Mulai Rp 1.500.000</div>
+	</div>
+      <div class="harga-note">Untuk bisnis yang ingin berkembang</div>
+      <div class="harga-divider"></div>
+      <ul class="harga-features">
+        <li><span class="check">✓</span> Website / Aplikasi Mobile custom</li>
+        <li><span class="check">✓</span> Desain UI/UX premium</li>
+        <li><span class="check">✓</span> Integrasi database & API</li>
+        <li><span class="check">✓</span> Panel admin (CMS)</li>
+        <li><span class="check">✓</span> 3 bulan support gratis</li>
+        <li><span class="check">✓</span> Revisi unlimited (dalam scope)</li>
+      </ul>
+      <a href="https://wa.me/6282360984623?text=Halo,%20saya%20tertarik%20dengan%20paket%20Professional" class="btn-primary" target="_blank" style="width:100%; text-align:center; justify-content:center;">Tanya Harga</a>
+    </div>
+
+    <div class="harga-card reveal">
+      <div class="harga-name">Enterprise</div>
+      <div class="harga-price-wrap">
+  	<div class="harga-price">Kustom</div>
+ 	 <div class="harga-price-tag">Hubungi Kami</div>
+	</div>
+      <div class="harga-note">Solusi penuh skala enterprise</div>
+      <div class="harga-divider"></div>
+      <ul class="harga-features">
+        <li><span class="check">✓</span> Sistem IoT end-to-end</li>
+        <li><span class="check">✓</span> Aplikasi multi-platform</li>
+        <li><span class="check">✓</span> Infrastruktur cloud & keamanan</li>
+        <li><span class="check">✓</span> SLA & maintenance kontrak</li>
+        <li><span class="check">✓</span> Dedicated project manager</li>
+      </ul>
+      <a href="https://wa.me/6282360984623?text=Halo,%20saya%20ingin%20diskusi%20solusi%20Enterprise" class="btn-ghost" target="_blank" style="width:100%; text-align:center; justify-content:center;">Diskusi Kebutuhan</a>
+    </div>
+  </div>
+
+  <div class="harga-footer reveal">
+    <p>Semua harga bisa disesuaikan dengan kebutuhan dan budget Anda. <strong style="color:var(--blue-light);">Konsultasi pertama gratis!</strong></p>
+  </div>
+</section>
+
+<!-- ===== TESTIMONI ===== -->
+<section id="testimonial">
+  <div class="reveal" style="text-align:center; max-width:560px; margin:0 auto;">
+    <span class="section-label">// Testimoni</span>
+    <h2 class="section-title">Apa Kata Klien Kami?</h2>
+    <p class="section-sub" style="margin:0 auto;">Kepuasan klien adalah prioritas utama kami dalam setiap proyek.</p>
+  </div>
+
+  <div class="testi-grid">
+    <div class="testi-card t1 reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Website toko online saya selesai lebih cepat dari yang dijanjikan! Desainnya modern, loading cepat, dan mudah dikelola. Tim AIT sangat responsif dan sabar menjelaskan.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">BR</div>
+        <div>
+          <div class="testi-name">Budi Raharjo</div>
+          <div class="testi-role">Pemilik Toko Online</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card t2 reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Sistem monitoring IoT untuk gudang kami bekerja sempurna. Sekarang bisa pantau suhu dan kelembaban dari mana saja lewat HP. Sangat membantu operasional bisnis kami!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SS</div>
+        <div>
+          <div class="testi-name">Siti Sundari</div>
+          <div class="testi-role">Manajer Operasional, PT XYZ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card t3 reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Laptop saya sudah hampir mati total, tapi setelah ditangani AIT bisa hidup lagi dan lebih kencang dari sebelumnya! Harga terjangkau dan teknisinya datang ke rumah. Top!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AP</div>
+        <div>
+          <div class="testi-name">Andika Pratama</div>
+          <div class="testi-role">Mahasiswa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section id="kontak">
+  <div class="kontak-grid">
+    <div class="kontak-left reveal">
+      <span class="section-label">// Hubungi Kami</span>
+      <h2 class="section-title">Siap Mulai Proyek Anda?</h2>
+      <p class="section-sub">Konsultasikan kebutuhan Anda dengan tim kami. Gratis, tanpa komitmen, dan kami siap membantu menemukan solusi terbaik.</p>
+
+      <div class="kontak-info">
+        <a href="https://wa.me/6282360984623?text=Halo%20Ambarita%20Inovasi%20Teknologi%2C%20saya%20ingin%20konsultasi" class="kontak-item k-wa" target="_blank">
+          <div class="kontak-item-icon">💬</div>
+          <div>
+            <div class="kontak-item-label">WhatsApp (Chat Sekarang)</div>
+            <div class="kontak-item-val">+62 823-6098-4623</div>
+          </div>
+        </a>
+        <a href="tel:+6282360984623" class="kontak-item k-phone" style="text-decoration:none; color:inherit;">
+          <div class="kontak-item-icon">📞</div>
+          <div>
+            <div class="kontak-item-label">Telepon</div>
+            <div class="kontak-item-val">0823-6098-4623</div>
+          </div>
+        </a>
+        <div class="kontak-item k-loc" style="cursor:default;">
+          <div class="kontak-item-icon">📍</div>
+          <div>
+            <div class="kontak-item-label">Area Layanan</div>
+            <div class="kontak-item-val">Siap ke lokasi Anda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="form-card">
+        <div class="form-title">Kirim Pesan</div>
+        <div class="form-sub">Isi form berikut dan kami akan menghubungi Anda segera.</div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" id="f-nama" placeholder="Nama Anda">
+          </div>
+          <div class="form-group">
+            <label>Nomor WhatsApp</label>
+            <input type="tel" id="f-wa" placeholder="08xx-xxxx-xxxx">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Layanan yang Dibutuhkan</label>
+          <select id="f-layanan">
+            <option value="">— Pilih Layanan —</option>
+            <option>Pembuatan IoT</option>
+            <option>Aplikasi Mobile</option>
+            <option>Perbaikan Komputer</option>
+            <option>Pembuatan Website</option>
+            <option>Lebih dari satu layanan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Ceritakan Kebutuhan Anda</label>
+          <textarea id="f-pesan" rows="4" placeholder="Jelaskan secara singkat proyek atau masalah yang Anda hadapi..."></textarea>
+        </div>
+
+        <button class="btn-primary" onclick="kirimWA()" style="width:100%; justify-content:center; font-size:16px; padding:16px;">
+          💬 Kirim via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <a href="#hero" class="logo" style="text-decoration:none;">
+          <div class="logo-icon">
+		<img src="logo.png" alt="AIT Logo">
+	  </div>
+          <div class="logo-text">
+            <div class="logo-name">Ambarita Inovasi Teknologi</div>
+            <div class="logo-tagline">Digital Solutions</div>
+          </div>
+        </a>
+      </div>
+      <p class="footer-desc">Mitra teknologi digital terpercaya Anda — menghadirkan solusi IoT, aplikasi mobile, website profesional, dan layanan perbaikan komputer.</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/6282360984623" class="social-btn" target="_blank" title="WhatsApp">💬</a>
+        <a href="#" class="social-btn" title="Instagram">📸</a>
+        <a href="#" class="social-btn" title="Facebook">👤</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Layanan</h5>
+      <ul class="footer-links">
+        <li><a href="#layanan">Pembuatan IoT</a></li>
+        <li><a href="#layanan">Aplikasi Mobile</a></li>
+        <li><a href="#layanan">Perbaikan Komputer</a></li>
+        <li><a href="#layanan">Pembuatan Website</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navigasi</h5>
+      <ul class="footer-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#proses">Cara Kerja</a></li>
+        <li><a href="#harga">Harga</a></li>
+        <li><a href="#testimonial">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Kontak</h5>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="icon">📞</span>
+          <span>0823-6098-4623</span>
+        </li>
+        <li>
+          <span class="icon">💬</span>
+          <span>WhatsApp tersedia 08.00–22.00 WIB</span>
+        </li>
+        <li>
+          <span class="icon">⚡</span>
+          <span>Respon dalam 1 jam kerja</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span>Ambarita Inovasi Teknologi</span>. Hak cipta dilindungi.</p>
+    <p>Dibuat dengan ❤️ untuk kemajuan digital Indonesia</p>
+  </div>
+</footer>
+
+<script>
+// Navbar scroll
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      document.getElementById('navbar')
+        .classList.toggle('scrolled', window.scrollY > 60);
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+// Hamburger
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  hamburger.classList.toggle('active');
+});
+document.querySelectorAll('#navLinks a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('active');
+  });
+});
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+// WhatsApp form
+function kirimWA() {
+  const nama = document.getElementById('f-nama').value.trim();
+  const wa = document.getElementById('f-wa').value.trim();
+  const layanan = document.getElementById('f-layanan').value;
+  const pesan = document.getElementById('f-pesan').value.trim();
+  if (!nama || !wa) {
+    alert('Mohon isi nama dan nomor WhatsApp Anda.');
+    return;
+  }
+  const msg = `Halo Ambarita Inovasi Teknologi,\n\n*Nama:* ${nama}\n*No. WA:* ${wa}\n*Layanan:* ${layanan || 'Belum dipilih'}\n\n*Pesan:*\n${pesan || '-'}\n\nSaya ingin konsultasi lebih lanjut. Terima kasih!`;
+  window.open('https://wa.me/6282360984623?text=' + encodeURIComponent(msg), '_blank');
+}
+// Smooth scroll nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+<script>
+// ================= MULTI THEME =================
+const themeToggle = document.getElementById('themeToggle');
+const themes = [
+  {
+    name: 'dark',
+    class: '',
+    label: '🌙 Dark'
+  },
+  {
+    name: 'light',
+    class: 'light-theme',
+    label: '☀️ Light'
+  },
+  {
+    name: 'neon',
+    class: 'neon-theme',
+    label: '⚡ Neon'
+  }
+];
+// apply theme
+function applyTheme(themeName) {
+  // reset semua class
+  document.body.classList.remove(
+    'light-theme',
+    'neon-theme'
+  );
+  const theme = themes.find(t => t.name === themeName);
+  // tambah class jika ada
+  if (theme.class) {
+    document.body.classList.add(theme.class);
+  }
+  // update tombol
+  themeToggle.innerHTML = theme.label;
+  // simpan localStorage
+  localStorage.setItem('theme', theme.name);
+}
+// load tema tersimpan
+let currentTheme =
+  localStorage.getItem('theme') || 'dark';
+applyTheme(currentTheme);
+// ganti tema setiap klik
+themeToggle.addEventListener('click', () => {
+  // animasi
+  themeToggle.animate([
+    { transform: 'scale(1) rotate(0deg)' },
+    { transform: 'scale(1.15) rotate(180deg)' },
+    { transform: 'scale(1) rotate(360deg)' }
+  ], {
+    duration: 700,
+    easing: 'ease-in-out'
+  });
+  // cari index tema sekarang
+  let currentIndex =
+    themes.findIndex(t => t.name === currentTheme);
+  // next theme
+  currentIndex = (currentIndex + 1) % themes.length;
+  currentTheme = themes[currentIndex].name;
+  applyTheme(currentTheme);
+});
+</script>
+</body>
+</html>
